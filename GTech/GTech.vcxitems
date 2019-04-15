@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding ="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <PropertyGroup Label="Globals" >
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{92a78f55-af06-4f8a-8f09-e844fd0c4a53}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\GTech.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\JSmartconfig.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\JSmartconfigService.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\OTAService.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\WiFiConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\GTech.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\JSmartconfig.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\JSmartconfigService.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\OTAService.h" />
+<ClInclude Include="$(MSBuildThisFileDirectory)src\WiFiConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+<Text Include="$(MSBuildThisFileDirectory)vs-readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory).DS_Store" />
+<None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+</Project>
